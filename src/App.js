@@ -1,10 +1,18 @@
 import React from 'react';
+
+import { Navbar, Header, Lebenslauf, Techstack, Projects, Contactform, Footer} from "./containers";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-        Hello
+        <Navbar />
+        <Header />
+        <Lebenslauf />
+        <Techstack />
+        <Projects />
+        <Contactform />
+        <Footer />
     </div>
   );
 }

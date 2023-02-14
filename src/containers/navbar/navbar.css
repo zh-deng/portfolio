@@ -1,0 +1,22 @@
+.navbar {
+    border: 3px black solid;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px red solid;
+}
+
+.navbar__links-logo {
+    border: 2px blue solid;
+}
+
+.navbar__links-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px blue solid;
+}
