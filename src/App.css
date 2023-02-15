@@ -1,15 +1,42 @@
-a:link {
-    text-decoration: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
 }
 
-a:visited {
-    text-decoration: none;
+.App {
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+
 }
 
-a:hover {
-    text-decoration: none;
+
+a {
+    text-decoration: unset;
+    color: white;
 }
 
-a:active {
-    text-decoration: none;
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bold {
+    font-weight: bold;
 }

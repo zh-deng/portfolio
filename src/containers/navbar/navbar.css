@@ -1,22 +1,55 @@
 .navbar {
-    border: 3px black solid;
+    /* border: 3px black solid; */
+    padding: 20px 40px;
 }
 
 .navbar__links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px red solid;
+    /* border: 1px red solid; */
+    padding: 10px;
 }
 
 .navbar__links-logo {
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
+    padding: 5px;
+}
+
+.navbar__links-logo p {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-family: "Kaushan Script", cursive;
 }
 
 .navbar__links-container {
     display: flex;
-    flex: 1;
-    justify-content: space-evenly;
+    flex: 0.75;
+    justify-content: space-around;
     align-items: center;
-    border: 1px blue solid;
+    /* border: 1px yellow solid; */
+    padding: 5px;
+    max-width: 50%;
+}
+
+.navbar__links-container p {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1450px) {
+    .navbar__links-container {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar__links-container {
+        flex: 1;
+        max-width: 100%;
+    }
 }

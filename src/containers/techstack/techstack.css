@@ -1,0 +1,35 @@
+.techstack {
+    background-color: blue;
+    margin: 60px 100px;
+    padding: 49px;
+    border: none;
+}
+
+.techstack__heading {
+    padding-bottom: 40px;
+}
+
+.techstack__heading h1 {
+    font-size: 50px;
+    letter-spacing: 0.05em;
+}
+
+.techstack__section--firstrow {
+    
+}
+
+.techstack__section img {
+    max-width: 100px;
+    height: auto;
+}
+
+.logo__spacing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo__spacing div{
+    padding: 30px;
+}

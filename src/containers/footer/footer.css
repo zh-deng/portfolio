@@ -1,0 +1,15 @@
+.footer {
+    background-color: blue;
+    padding: 20px;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright p {
+    font-size: 24px;
+    font-weight: bold;
+}

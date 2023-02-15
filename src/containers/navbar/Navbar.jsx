@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navbar__links">
                 <div className="navbar__links-logo">
-                    Zhihao Deng
+                    <p>Zhihao Deng</p>
                 </div>
                 <div className="navbar__links-container">
                     <Menu />
