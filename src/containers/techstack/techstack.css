@@ -14,11 +14,14 @@
     letter-spacing: 0.05em;
 }
 
-.techstack__section--firstrow {
-    
+.techstack__tab-container__navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
 }
 
-.techstack__section img {
+
+.techstack__tab-container__section img {
     max-width: 100px;
     height: auto;
 }
@@ -32,4 +35,24 @@
 
 .logo__spacing div{
     padding: 30px;
+}
+
+
+.tabs {
+
+}
+
+.active-tab {
+    color: orange;
+    border-bottom: 4px solid black;
+
+}
+
+.unactive-tab {
+    color: white;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
 }

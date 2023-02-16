@@ -3,6 +3,16 @@
     padding: 20px;
 }
 
+.footer__contact {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer__contact img {
+    width: 50px;
+}
+
 .footer__copyright {
     display: flex;
     align-items: center;
