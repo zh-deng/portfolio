@@ -1,7 +1,8 @@
 import bootstrap from "../../assets/stack/bootstrap.png";
 import css from "../../assets/stack/css.png";
 import docker from "../../assets/stack/docker.png";
-import github from "../../assets/stack/github.png";
+import figma from "../../assets/stack/figma.png";
+import git from "../../assets/stack/git.png";
 import html from "../../assets/stack/html.png";
 import java from "../../assets/stack/java.png";
 import javascript from "../../assets/stack/javascript.png";
@@ -22,7 +23,8 @@ export {
     bootstrap,
     css,
     docker,
-    github,
+    figma,
+    git,
     html,
     java,
     javascript,

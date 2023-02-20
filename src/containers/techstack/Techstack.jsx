@@ -1,6 +1,6 @@
 import React from "react";
 import "./techstack.css";
-import { bootstrap, css, docker, github, html, java, javascript, jest, kubernetes, mysql,
+import { bootstrap, css, docker, figma, git, html, java, javascript, jest, kubernetes, mysql,
         nodejs, python, react, redux, restapi, sass, typescript } from "./imports";
 import { useDispatch, useSelector } from "react-redux";
 import { changeIndex } from "../../redux/tabtracker";
@@ -95,7 +95,7 @@ const Techstack = () => {
                     <div className={tabIndex !== thirdTabId && "invisible"}>
                         <div className="techstack__tab-container__section--firstrow logo__spacing">
                             <div>
-                                <img src={github} alt="GitHub" title="GitHub"/>
+                                <img src={git} alt="Git" title="Git"/>
                             </div>
                             <div>
                                 <img src={docker} alt="Docker" title="Docker"/>
@@ -109,7 +109,7 @@ const Techstack = () => {
                                 <img src={restapi} alt="RestAPI" title="RestAPI"/>
                             </div>
                             <div>
-                                <img src={css} alt="css" title="css"/>
+                                <img src={figma} alt="Figma" title="Figma"/>
                             </div>
                             <div>
                                 <img src={css} alt="css" title="css"/>
