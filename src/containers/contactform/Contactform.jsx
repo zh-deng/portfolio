@@ -1,7 +1,13 @@
 import React from "react";
 import "./contactform.css";
+import { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm } from "../../redux/formtrackerSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Contactform = () => {
+
+    const { firstName, lastName, email, message } = useSelector(state => state.formtracker);
+    const dispatch = useDispatch();
+
     return (
         <div className="contact" id="contact">
             <div className="contact__contactform-container">
@@ -20,6 +26,8 @@ const Contactform = () => {
                                     name="vorname"
                                     id="vorname"
                                     placeholder="Vorname"
+                                    onChange={(e) => dispatch(updateFirstName(e.target.value))}
+                                    required
                                 />
                             </div>
                             <div className="contact__contactform-container__field--name-lastname">
@@ -31,6 +39,8 @@ const Contactform = () => {
                                     name="nachname"
                                     id="nachname"
                                     placeholder="Nachname"
+                                    onChange={(e) => dispatch(updateLastName(e.target.value))}
+                                    required
                                 />
                             </div>
                         </div>
@@ -42,7 +52,9 @@ const Contactform = () => {
                                 type="text"
                                 name="email"
                                 id="email"
-                                placeholder="Email"
+                                placeholder="Email" 
+                                onChange={(e) => dispatch(updateEmail(e.target.value))} 
+                                required
                             />
                         </div>
                         <div className="contact__contactform-container__field--message">
@@ -53,7 +65,9 @@ const Contactform = () => {
                                 name="message"
                                 id="message"
                                 placeholder="Nachricht"
-                                rows="5"
+                                rows="7" 
+                                onChange={(e) => dispatch(updateMessage(e.target.value))}
+                                required
                             />
                         </div>
                     </div>
@@ -64,12 +78,14 @@ const Contactform = () => {
                             className="submitButton"
                         />
                         <input
-                            type="button" 
+                            type="reset" 
                             value="Reset" 
                             className="resetButton"
+                            onClick={() => dispatch(resetForm())}
                         />
                     </div>
                 </form>
+                <p>{firstName}<br/>{lastName}<br/>{email}<br/>{message}</p>
             </div>
         </div>
     )

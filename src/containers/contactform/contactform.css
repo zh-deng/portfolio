@@ -14,6 +14,7 @@
 
 .contact__contactform-container h2 {
     padding-bottom: 30px;
+    padding-left: 5px;
 }
 
 .contact__contactform-container__field--name {
@@ -22,17 +23,25 @@
     padding-bottom: 15px;
 }
 
+.contact__contactform-container__field--name-firstname h5 {
+    padding-left: 5px;
+}
+
 .contact__contactform-container__field--name-firstname input {
     margin-top: 5px;
-    padding: 7px;
+    padding: 7px 10px;
     border-radius: 10px;
     border: none;
     width: 200px;
 }
 
+.contact__contactform-container__field--name-lastname h5 {
+    padding-left: 5px;
+}
+
 .contact__contactform-container__field--name-lastname input {
     margin-top: 5px;
-    padding: 7px;
+    padding: 7px 10px;
     border-radius: 10px;
     border: none;
     width: 200px;
@@ -42,12 +51,20 @@
     padding-bottom: 15px;
 }
 
+.contact__contactform-container__field--email h5 {
+    padding-left: 5px;
+}
+
 .contact__contactform-container__field--email input {
     width: 100%;
-    padding: 7px;
+    padding: 7px 10px;
     margin-top: 5px;
     border-radius: 10px;
     border: none;
+}
+
+.contact__contactform-container__field--message h5 {
+    padding-left: 5px;
 }
 
 .contact__contactform-container__field--message textarea {
@@ -55,7 +72,8 @@
     margin-top: 5px;
     border-radius: 10px;
     border: none;
-    padding: 5px;
+    padding: 10px 15px;
+    resize: none;
 }
 
 .contact__contactform-container__button-container{

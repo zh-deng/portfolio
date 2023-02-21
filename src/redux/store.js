@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import tabtrackerReducer from './tabtracker';
+import tabtrackerReducer from './tabtrackerSlice';
+import formtrackerReducer from "./formtrackerSlice";
 
 export const store = configureStore({
   reducer: {
-    tabtracker: tabtrackerReducer
+    tabtracker: tabtrackerReducer,
+    formtracker: formtrackerReducer
   }
 });
