@@ -7,29 +7,31 @@ import { FloatButton } from "antd";
 const Header = () => {
     return (
         <div className="header" id="aboutme">
-            <div className="header__heading">
-                <h1>Intro</h1>
-                <FloatButton.Group style={{top: 450}} >
+            <div className="header__floatbutton">
+                <FloatButton.Group >
                     <FloatButton
-                        icon={<BsFillArrowUpCircleFill />} 
+                        icon={<BsFillArrowUpCircleFill />}
                         tooltip="Go to top"
                         href="#home"
                     />
-                    <FloatButton 
-                        icon={<BsLinkedin />} 
-                        tooltip="Visit LinkedIn profile" 
+                    <FloatButton
+                        icon={<BsLinkedin />}
+                        tooltip="Visit LinkedIn profile"
                         href="https://www.linkedin.com/in/zhihao-deng/"
                         target="_blank"
                         rel="noopener noreferrer"
                     />
-                    <FloatButton 
-                        icon={<BsGithub/>} 
-                        tooltip="Visit GitHub Repositories" 
+                    <FloatButton
+                        icon={<BsGithub/>}
+                        tooltip="Visit GitHub Repositories"
                         href="https://github.com/zh-deng"
                         target="_blank"
                         rel="noopener noreferrer"
                     />
                 </FloatButton.Group>
+            </div>
+            <div className="header__heading">
+                <h1>Über mich</h1>
             </div>
             <div className="header__intro">
                 <p>

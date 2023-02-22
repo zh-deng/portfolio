@@ -1,7 +1,13 @@
 .header {
-    padding: 50px 100px;
+    padding: 200px 10%;
 }
 
 .header__heading {
-    padding: 30px;
+    padding: 30px 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .header__floatbutton{
+        display: none;
+    }
 }

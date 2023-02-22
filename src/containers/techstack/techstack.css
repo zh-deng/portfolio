@@ -17,7 +17,7 @@
 .techstack__tab-container__navbar {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 60px;
 }
 
 
@@ -39,7 +39,7 @@
 
 
 .tabs {
-
+    padding: 30px;
 }
 
 .active-tab {
@@ -51,6 +51,11 @@
 .unactive-tab {
     color: white;
     cursor: pointer;
+}
+
+.unactive-tab:hover {
+    font-size: 24px;
+    padding: 0;
 }
 
 .invisible {

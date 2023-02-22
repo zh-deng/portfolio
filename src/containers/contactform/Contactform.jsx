@@ -85,7 +85,6 @@ const Contactform = () => {
                         />
                     </div>
                 </form>
-                <p>{firstName}<br/>{lastName}<br/>{email}<br/>{message}</p>
             </div>
         </div>
     )

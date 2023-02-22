@@ -6,11 +6,11 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-        <div className="app__head">
+        <div className="app__nav">
           <Navbar />
-          <Header />
         </div>
         <div className="app__body">
+          <Header />
           <Techstack />
           <Projects />
           <Contactform />
