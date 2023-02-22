@@ -31,6 +31,9 @@ const Navbar = () => {
                 <div className="navbar__links-hamburgermenu">
                     <FiMenu size={90} style={{color: "white", padding: "10px"}}/>
                 </div>
+                <div className={mobile === false ? "navbar__links-hamburgermenu--open" : "navbar__links-hamburgermenu--closed"}>
+                    <Menu />
+                </div>
             </div>
         </div>
     )
