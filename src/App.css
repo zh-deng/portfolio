@@ -23,6 +23,8 @@
     background:radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
 
     background-attachment: fixed;
+
+    overflow: scroll;
 }
 
 

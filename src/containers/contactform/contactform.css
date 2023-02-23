@@ -1,6 +1,132 @@
 .contact__contactform-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.contact__contactform-container form {
+    background-color: #E4E7ED;
+    width: 90%;
+    min-width: 350px;
+    max-width: 500px;
+    margin: 150px 0;
+    padding: 40px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact__contactform-container h2 {
+    padding-bottom: 30px;
+    padding-left: 5px;
+}
+
+.contact__contactform-container__field--name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.contact__contactform-container__field--name-firstname {
+    flex-grow: 1;
+}
+
+.contact__contactform-container__field--name-firstname h5 {
+    padding-left: 5px;
+}
+
+.contact__contactform-container__field--name-firstname input {
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact__contactform-container__field--name-lastname {
+    flex-grow: 1;
+}
+
+.contact__contactform-container__field--name-lastname h5 {
+    padding-left: 5px;
+}
+
+.contact__contactform-container__field--name-lastname input {
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact__contactform-container__field--email {
+    margin-top: 15px;
+}
+
+.contact__contactform-container__field--email h5 {
+    padding-left: 5px;
+}
+
+.contact__contactform-container__field--email input {
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact__contactform-container__field--message {
+    margin-top: 15px;
+}
+
+.contact__contactform-container__field--message h5 {
+    padding-left: 5px;
+}
+
+.contact__contactform-container__field--message textarea {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    resize: none;
+}
+
+.contact__contactform-container__button-container{
+    padding: 20px 0;
+}
+
+.submitButton {
+    width: 125px;
+    padding: 8px 5px;
+    background-color: #0c42ad;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.resetButton {
+    width: 125px;
+    padding: 8px 5px;
+    margin-left: 15px;
+    background-color: #0c42ad;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* .contact__contactform-container {
+    display: flex;
+    justify-content: center;
 }
 
 .contact__contactform-container form {
@@ -106,4 +232,4 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
+} */
