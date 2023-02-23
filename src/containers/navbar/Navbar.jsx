@@ -15,6 +15,8 @@ const Menu = () => (
     </>
 )
 
+
+
 const Navbar = () => {
     const { mobile } = useSelector((state) => state.mobileswitch);
     const dispatch = useDispatch();
@@ -29,10 +31,14 @@ const Navbar = () => {
                     <Menu />
                 </div>
                 <div className="navbar__links-hamburgermenu">
-                    <FiMenu size={90} style={{color: "white", padding: "10px"}}/>
+                    <FiMenu size={90} style={{color: "white", padding: "10px"}} onClick={() => dispatch(switchScreenversion())}/>
                 </div>
                 <div className={mobile === false ? "navbar__links-hamburgermenu--open" : "navbar__links-hamburgermenu--closed"}>
-                    <Menu />
+                    <p><a href="#aboutme" onClick={() => dispatch(switchScreenversion())}>Über mich</a></p>
+                    <p><a href="#techstack" onClick={() => dispatch(switchScreenversion())}>Tech Stack</a></p>
+                    <p><a href="#projects" onClick={() => dispatch(switchScreenversion())}>Projekte</a></p>
+                    <p><a href="#contact" onClick={() => dispatch(switchScreenversion())}>Kontakt</a></p>
+                    <p><a href={lebenslauf} target="_blank" rel="noreferrer" onClick={() => dispatch(switchScreenversion())}>Lebenslauf</a></p>
                 </div>
             </div>
         </div>
