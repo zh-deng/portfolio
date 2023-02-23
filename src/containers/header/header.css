@@ -1,9 +1,19 @@
 .header {
-    padding: 200px 10%;
+    padding: 300px 10% 0 10%;
+    margin-bottom: 300px;
 }
 
 .header__heading {
     padding: 30px 5px;
+}
+
+.header__heading h1 {
+    font-size: 50px;
+
+}
+
+.header__aboutme p {
+    font-size: 24px;
 }
 
 

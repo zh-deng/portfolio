@@ -94,6 +94,7 @@
         background-color: rgb(93, 93, 93);
         opacity: 95%;
         padding: 70px;
+        text-align: center;
     }
 
     .navbar__links-hamburgermenu--open p {

@@ -1,8 +1,10 @@
 .techstack {
     background-color: blue;
-    margin: 60px 100px;
-    padding: 49px;
+    margin: 300px auto;
+    padding: 150px 50px;
     border: none;
+    width: 80%;
+    min-width: 350px;
 }
 
 .techstack__heading {
@@ -11,15 +13,18 @@
 
 .techstack__heading h1 {
     font-size: 50px;
+    text-align: center;
     letter-spacing: 0.05em;
 }
 
 .techstack__tab-container__navbar {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
+    align-items: center;
     padding: 60px;
 }
-
 
 .techstack__tab-container__section img {
     max-width: 100px;
@@ -29,6 +34,7 @@
 .logo__spacing {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -44,7 +50,7 @@
 
 .active-tab {
     color: orange;
-    border-bottom: 4px solid black;
+    text-decoration: 5px underline black;
 
 }
 
@@ -60,4 +66,15 @@
 
 .invisible {
     display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .techstack__heading h1 {
+        font-size: 40px;
+    }
+
+    .techstack__tab-container__section img {
+        max-width: 150px;
+        height: auto;
+    }
 }

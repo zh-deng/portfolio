@@ -33,7 +33,7 @@ const Header = () => {
             <div className="header__heading">
                 <h1>Über mich</h1>
             </div>
-            <div className="header__intro">
+            <div className="header__aboutme">
                 <p>
                     Moin, ich bin ein Softwareentwickler aus Unterhaching bei <span className="bold">München</span>. 
                     Ich habe meinen Bachelor in Informatik an der <span className="bold">Ludwig-Maximilians-Universität München</span> abgeschlossen. 

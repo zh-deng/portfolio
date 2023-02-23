@@ -26,7 +26,7 @@ const Techstack = () => {
                         <h1>Fokus</h1>
                     </div>
                     <div className={tabIndex === secondTabId ? "tabs active-tab" : "tab unactive-tab"} onClick={() => dispatch(changeIndex(secondTabId))}>
-                        <h1>Basic-Wissen</h1>
+                        <h1>Basics</h1>
                     </div>
                     <div className={tabIndex === thirdTabId ? "tabs active-tab" : "tab unactive-tab"} onClick={() => dispatch(changeIndex(thirdTabId))}>
                         <h1>Allgemein</h1>
