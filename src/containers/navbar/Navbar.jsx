@@ -16,7 +16,6 @@ const Menu = () => (
 )
 
 
-
 const Navbar = () => {
     const { mobile } = useSelector((state) => state.mobileswitch);
     const dispatch = useDispatch();

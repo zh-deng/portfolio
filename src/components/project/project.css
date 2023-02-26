@@ -1,3 +1,23 @@
 .project {
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
 }
+
+.project__img-slider--left, 
+.project__img-slider--right {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.project__container__img-container img {
+    width: 500px;
+    height: auto;
+}
+
+.image--off {
+    display: none;
+}
+
