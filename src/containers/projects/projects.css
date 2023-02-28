@@ -1,6 +1,11 @@
 .projects {
-    width: 40%;
+    width: 900px;
+    max-width: 90%;
     text-align: center;
     background-color: white;
     margin: 200px auto;
+}
+
+.projects__heading {
+    padding: 50px;
 }

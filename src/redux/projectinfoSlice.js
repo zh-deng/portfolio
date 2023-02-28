@@ -4,23 +4,27 @@ import { spotifywebImages } from "../containers/projects/imports";
 export const projectinfoSlice = createSlice({
     name: "projectinfo",
     initialState: {
-        projectCount: 1,
+        projectCount: 2,
         projectArray: [
             {
                 imgArray: spotifywebImages,
                 currentImage: 0,
                 projectName: "SpotifyWEB",
-                projectDescription: "noob"
+                projectDescription: "noob",
+                techStack: ["HTML", "CSS"],
+                liveSite: "",
+                gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"
             },
-
+            {
+                imgArray: spotifywebImages,
+                currentImage: 0,
+                projectName: "GPT-3",
+                projectDescription: "haha",
+                techStack: ["HTML", "CSS"],
+                liveSite: "",
+                gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"
+            }
         ]
-        // spotifyweb: {
-        //     imgArray: spotifywebImages,
-        //     currentImage: 0,
-        //     projectName: "SpotifyWEB",
-        //     projectDescription: "noob"
-        // }
-
     },
     reducers: {
         previousImage: (state, action) => {

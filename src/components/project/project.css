@@ -1,23 +1,120 @@
 .project {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
+    padding: 5%;
 }
 
-.project__img-slider--left, 
-.project__img-slider--right {
-    background-color: yellow;
+.project__container__image-container {
+    display: flex;
+}
+
+.project__image-container__img-slider--left, 
+.project__image-container__img-slider--right {
+    background-color: rgb(146, 146, 140);
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
+    max-width: 5%;
+    border-radius: 2rem;
+    border: none;
 }
 
-.project__container__img-container img {
-    width: 500px;
+.project__container__image-container__img-container img {
+    width: 98%;
     height: auto;
+    transition: transform 0.5s;
+}
+
+.project__container__image-container__img-container img:hover {
+    transform: scale(2);
+    max-width: 100%;
 }
 
 .image--off {
     display: none;
 }
 
+.project__container__image-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.project__container__image-counter p {
+    font-size: 1rem;
+    color: grey;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.image--active {
+    padding: 5px;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.image--active p {
+    font-size: 25px;
+    display: none;
+}
+
+.project__container__info-container {
+    background-color: green;
+    margin: 20px auto;
+    border-radius: 25px;
+}
+
+.project__container__info-container--info {
+    padding: 30px;
+}
+
+.project__container__info-container--info h2 {
+    padding: 20px;
+}
+
+.project__container__info-container--tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.project__container__info-container--tech h3 {
+    border: 3px solid red;
+    padding: 5px 20px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+}
+
+.project__container__info-container--links {
+    padding: 30px;
+}
+
+.project__container__info-container--links button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 0 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1350px) {
+    .project__container__image-container__img-container img:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .project__container__image-container__img-container img:hover {
+        transform: scale(1);
+    }
+}

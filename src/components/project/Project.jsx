@@ -17,46 +17,71 @@ const Project = (props) => {
     const handleRightClick = () => {
         console.log("right");
         dispatch(nextImage(props.projectId));
-    }
+    };
     return (
         <div className="project">
-            <div className="project__img-slider--left" onClick={handleLeftClick}>
-                <FaChevronLeft />
-            </div>
             <div className="project__container">
-                <div className="project__container__img-container">
+                <div className="project__container__image-container">
+                    <div className="project__image-container__img-slider--left" onClick={handleLeftClick}>
+                        <FaChevronLeft style={{fontSize: 30}}/>
+                    </div>
+                    <div className="project__container__image-container__img-container">
+                        {
+                            currentProject.imgArray.map((image, index) => (
+                                <img
+                                    src={image.src}
+                                    id={image.title + index}
+                                    key={image.title + index}
+                                    title={image.title}
+                                    alt={image.alt}
+                                    className={currentProject.currentImage !== index ? "image--off" : "image--on"}
+                                />
+                            ))
+                        }
+                    </div>
+                    <div className="project__image-container__img-slider--right" onClick={handleRightClick}>
+                        <FaChevronRight style={{fontSize: 30}}/>
+                    </div>
+                </div>
+                <div className="project__container__image-counter">
                     {
                         currentProject.imgArray.map((image, index) => (
-                            <img 
-                                src={image.src} 
-                                id={image.title + index}
-                                key={image.title + index}
-                                title={image.title}
-                                alt={image.alt}
-                                className={currentProject.currentImage !== index ? "image--off" : "image--on"}
-                            />
+                            <div 
+                                className={currentProject.currentImage === index && "image--active" } 
+                                key={"image-counter" + index}
+                            >
+                                <p>
+                                    {"⬤"}
+                                </p>
+                            </div>
                         ))
                     }
                 </div>
                 <div className="project__container__info-container">
-                    <h2>
-                        Projectname
-                    </h2>
-                    <p>
-                        Project description
-                    </p>
+                    <div className="project__container__info-container--info">
+                        <h2>
+                            {currentProject.projectName}
+                        </h2>
+                        <p>
+                            {currentProject.projectDescription}
+                        </p>
+                        <div className="project__container__info-container--tech">
+                            {currentProject.techStack.map(
+                                (element) => (
+                                    <h3>{element}</h3>
+                                )
+                            )}
+                        </div>
+                    </div>
+                    <div className="project__container__info-container--links">
+                        {
+                            currentProject.liveSite !== "" && <a href={currentProject.liveSite} target="_blank"><button>Live Site</button></a>
+                        }
+                        {
+                            currentProject.gitHub !== "" && <a href={currentProject.gitHub} target="_blank"><button>GitHub</button></a>
+                        }
+                    </div>
                 </div>
-                <div className="project__container__button-container">
-                    <button>
-                        Live Site
-                    </button>
-                    <button>
-                        GitHub
-                    </button>
-                </div>
-            </div>
-            <div className="project__img-slider--right" onClick={handleRightClick}>
-                <FaChevronRight />
             </div>
         </div>
     )

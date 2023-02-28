@@ -19,8 +19,8 @@ const Projects = () => {
             </div>
             <div className="projects__container">
                 {
-                    projects.map((item) => (
-                        <Project projectId={0}/> 
+                    projects.map((item, index) => (
+                        <Project projectId={index}/> 
                     ))
                 }
             </div>
