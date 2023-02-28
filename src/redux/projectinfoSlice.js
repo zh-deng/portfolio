@@ -22,7 +22,7 @@ export const projectinfoSlice = createSlice({
                 projectDescription: "haha",
                 techStack: ["HTML", "CSS"],
                 liveSite: "",
-                gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"
+                gitHub: "https://github.com/zh-deng/GPT-3-Figma"
             }
         ]
     },
