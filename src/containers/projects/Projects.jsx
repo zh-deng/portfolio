@@ -5,13 +5,11 @@ import { useSelector } from "react-redux";
 
 
 const Projects = () => {
-    const {projectCount} = useSelector((state) => state.projectinfo);
-    console.log(projectCount);
-    const projectsData = []
+    const {projectArray} = useSelector((state) => state.projectinfo);
     let projects = [];
-    for(let i = 0; i < projectCount; i++) {
-        projects.push(i);
-    }
+    projectArray.map((project, index) => {
+        projects.push(index);
+    });
     return (
         <div className="projects" id="projects">
             <div className="projects__heading">

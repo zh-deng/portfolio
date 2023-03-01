@@ -58,6 +58,11 @@ const Project = (props) => {
                     }
                 </div>
                 <div className="project__container__info-container">
+                    <div className="project__container__info-container--status">
+                        {
+                            currentProject.status === "finished" ? <p>Finished</p> : <p>Ongoing</p>
+                        }
+                    </div>
                     <div className="project__container__info-container--info">
                         <h2>
                             {currentProject.projectName}

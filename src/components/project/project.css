@@ -48,7 +48,6 @@
 .project__container__image-counter p {
     font-size: 1rem;
     color: grey;
-    cursor: pointer;
     padding: 5px;
 }
 
@@ -69,6 +68,22 @@
     background-color: green;
     margin: 20px auto;
     border-radius: 25px;
+}
+
+.project__container__info-container--status {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.project__container__info-container--status p {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: white;
 }
 
 .project__container__info-container--info {
@@ -116,6 +131,6 @@
 
 @media screen and (max-width: 1024px) {
     .project__container__image-container__img-container img:hover {
-        transform: scale(1);
+        transform: none;
     }
 }

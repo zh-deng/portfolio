@@ -4,11 +4,21 @@ import { spotifywebImages, gpt3Images } from "../containers/projects/imports";
 export const projectinfoSlice = createSlice({
     name: "projectinfo",
     initialState: {
-        projectCount: 2,
         projectArray: [
             {
                 imgArray: gpt3Images,
                 currentImage: 0,
+                status: "ongoing",
+                projectName: "E-Commerce",
+                projectDescription: "haha",
+                techStack: ["HTML", "CSS", "SCSS", "REACT", "REDUX", "TYPESCRIPT"],
+                liveSite: "",
+                gitHub: "https://github.com/zh-deng/GPT-3-Figma"
+            },
+            {
+                imgArray: gpt3Images,
+                currentImage: 0,
+                status: "finished",
                 projectName: "GPT-3",
                 projectDescription: "haha",
                 techStack: ["HTML", "CSS", "REACT"],
@@ -18,6 +28,7 @@ export const projectinfoSlice = createSlice({
             {
                 imgArray: spotifywebImages,
                 currentImage: 0,
+                status: "finished",
                 projectName: "SpotifyWEB",
                 projectDescription: "noob",
                 techStack: ["HTML", "CSS", "REACT"],
