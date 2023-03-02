@@ -2,10 +2,11 @@ import React from "react";
 import "./projects.css";
 import Project from "../../components/project/Project";
 import { useSelector } from "react-redux";
+import { selectProjectinfo } from "../../redux/projectinfoSlice";
 
 
 const Projects = () => {
-    const {projectArray} = useSelector((state) => state.projectinfo);
+    const {projectArray} = useSelector(selectProjectinfo);
     let projects = [];
     projectArray.map((project, index) => {
         projects.push(index);

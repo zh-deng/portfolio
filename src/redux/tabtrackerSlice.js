@@ -12,6 +12,8 @@ export const tabtrackerSlice = createSlice({
     }
 });
 
+export const selectTabtracker = state => state.tabtracker;
+
 export const { changeIndex } = tabtrackerSlice.actions;
 
 export default tabtrackerSlice.reducer;

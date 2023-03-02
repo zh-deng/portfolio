@@ -30,6 +30,8 @@ export const formtrackerSlice = createSlice({
     }
 });
 
+export const selectFormtracker = state => state.formtracker;
+
 export const { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm } = formtrackerSlice.actions;
 
 export default formtrackerSlice.reducer;

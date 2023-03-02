@@ -12,6 +12,8 @@ export const mobileswitchSlice = createSlice({
     }
 });
 
+export const selectMobileswitch = state => state.mobileswitch;
+
 export const { switchScreenversion } = mobileswitchSlice.actions;
 
 export default mobileswitchSlice.reducer;

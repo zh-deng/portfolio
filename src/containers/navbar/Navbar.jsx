@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css";
 import lebenslauf from "../../assets/lebenslauf/one.pdf";
 import { useDispatch, useSelector } from "react-redux";
-import { switchScreenversion } from "../../redux/mobileswitchSlice";
+import { selectMobileswitch, switchScreenversion } from "../../redux/mobileswitchSlice";
 import { FiMenu } from "react-icons/fi";
 import { ImCross } from "react-icons/im";
 
@@ -18,7 +18,7 @@ const Menu = () => (
 
 
 const Navbar = () => {
-    const { mobile } = useSelector((state) => state.mobileswitch);
+    const { mobile } = useSelector(selectMobileswitch);
     const dispatch = useDispatch();
 
     return (

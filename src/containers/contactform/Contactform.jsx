@@ -1,11 +1,11 @@
 import React from "react";
 import "./contactform.css";
-import { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm } from "../../redux/formtrackerSlice";
+import { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm, selectFormtracker } from "../../redux/formtrackerSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Contactform = () => {
 
-    const { firstName, lastName, email, message } = useSelector(state => state.formtracker);
+    const { firstName, lastName, email, message } = useSelector(selectFormtracker);
     const dispatch = useDispatch();
 
     return (

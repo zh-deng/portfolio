@@ -52,6 +52,8 @@ export const projectinfoSlice = createSlice({
     }
 });
 
+export const selectProjectinfo = state => state.projectinfo;
+
 export const {previousImage, nextImage} = projectinfoSlice.actions;
 
 export default projectinfoSlice.reducer;

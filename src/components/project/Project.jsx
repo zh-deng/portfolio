@@ -2,11 +2,11 @@ import React from "react";
 import "./project.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { previousImage, nextImage } from "../../redux/projectinfoSlice";
+import { previousImage, nextImage, selectProjectinfo } from "../../redux/projectinfoSlice";
 
 
 const Project = (props) => {
-    const {projectArray} = useSelector((state) => state.projectinfo);
+    const {projectArray} = useSelector(selectProjectinfo);
     const dispatch = useDispatch();
     const allProjects = projectArray;
     const currentProject = allProjects[props.projectId];
