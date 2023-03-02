@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { spotifywebImages, gpt3Images } from "../containers/projects/imports";
+import { projectDescriptions } from "../containers/projects/projectDescriptions";
 
 export const projectinfoSlice = createSlice({
     name: "projectinfo",
@@ -10,7 +11,7 @@ export const projectinfoSlice = createSlice({
                 currentImage: 0,
                 status: "ongoing",
                 projectName: "E-Commerce",
-                projectDescription: "haha",
+                projectDescription: projectDescriptions.ecommerce.deutsch,
                 techStack: ["HTML", "CSS", "SCSS", "REACT", "REDUX", "TYPESCRIPT"],
                 liveSite: "",
                 gitHub: "https://github.com/zh-deng/GPT-3-Figma"
@@ -20,7 +21,7 @@ export const projectinfoSlice = createSlice({
                 currentImage: 0,
                 status: "finished",
                 projectName: "GPT-3",
-                projectDescription: "haha",
+                projectDescription: projectDescriptions.gpt3.deutsch,
                 techStack: ["HTML", "CSS", "REACT"],
                 liveSite: "",
                 gitHub: "https://github.com/zh-deng/GPT-3-Figma"
@@ -30,7 +31,7 @@ export const projectinfoSlice = createSlice({
                 currentImage: 0,
                 status: "finished",
                 projectName: "SpotifyWEB",
-                projectDescription: "noob",
+                projectDescription: projectDescriptions.spotifyweb.deutsch,
                 techStack: ["HTML", "CSS", "REACT"],
                 liveSite: "",
                 gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"

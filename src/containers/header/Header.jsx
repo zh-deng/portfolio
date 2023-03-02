@@ -37,7 +37,7 @@ const Header = () => {
                 <p>
                     Moin, ich bin ein Softwareentwickler aus Unterhaching bei <span className="bold">München</span>. 
                     Ich habe meinen Bachelor in Informatik an der <span className="bold">Ludwig-Maximilians-Universität München</span> abgeschlossen. 
-                    Ich bin sehr <span className="bold">wissbegierig</span> und scheue mich nicht vor <span className="bold">neuen Technologien</span>.
+                    Ich lerne sehr schnell und bin immer offen für <span className="bold">neue Technologien</span>.
                     Das Lösen von Problemen und <span className="bold">strategisches Denken</span> sind meine Leidenschaft.
                     Ich interagiere gerne mit Menschen und würde mich als <span className="bold">Teamplayer</span> bezeichnen.
                 </p>

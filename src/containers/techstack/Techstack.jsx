@@ -15,7 +15,7 @@ const Techstack = () => {
 
     return (
         <div className="techstack" id="techstack">
-            <div className="techstack__heading gradient__text">
+            <div className="techstack__heading">
                 <h1>
                     Tech-Stack
                 </h1>

@@ -23,7 +23,7 @@ const Project = (props) => {
             <div className="project__container">
                 <div className="project__container__image-container">
                     <div className="project__image-container__img-slider--left" onClick={handleLeftClick}>
-                        <FaChevronLeft style={{fontSize: 30}}/>
+                        <FaChevronLeft />
                     </div>
                     <div className="project__container__image-container__img-container">
                         {
@@ -40,7 +40,7 @@ const Project = (props) => {
                         }
                     </div>
                     <div className="project__image-container__img-slider--right" onClick={handleRightClick}>
-                        <FaChevronRight style={{fontSize: 30}}/>
+                        <FaChevronRight />
                     </div>
                 </div>
                 <div className="project__container__image-counter">

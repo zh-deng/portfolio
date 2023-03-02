@@ -4,6 +4,7 @@ import lebenslauf from "../../assets/lebenslauf/one.pdf";
 import { useDispatch, useSelector } from "react-redux";
 import { switchScreenversion } from "../../redux/mobileswitchSlice";
 import { FiMenu } from "react-icons/fi";
+import { ImCross } from "react-icons/im";
 
 const Menu = () => (
     <>
@@ -21,7 +22,7 @@ const Navbar = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className="navbar" id="home">
+        <div className="navbar">
             <div className="navbar__links">
                 <div className="navbar__links-logo">
                     <p>Zhihao Deng</p>
@@ -30,9 +31,12 @@ const Navbar = () => {
                     <Menu />
                 </div>
                 <div className="navbar__links-hamburgermenu">
-                    <FiMenu size={90} style={{color: "white", padding: "10px"}} onClick={() => dispatch(switchScreenversion())}/>
+                    <FiMenu  onClick={() => dispatch(switchScreenversion())}/>
                 </div>
                 <div className={mobile === true ? "navbar__links-hamburgermenu--open" : "navbar__links-hamburgermenu--closed"}>
+                    <div className="navbar__links-hamburgermenu--exit" onClick={() => dispatch(switchScreenversion())}>
+                        <ImCross />
+                    </div>
                     <p><a href="#aboutme" onClick={() => dispatch(switchScreenversion())}>Über mich</a></p>
                     <p><a href="#techstack" onClick={() => dispatch(switchScreenversion())}>Tech Stack</a></p>
                     <p><a href="#projects" onClick={() => dispatch(switchScreenversion())}>Projekte</a></p>

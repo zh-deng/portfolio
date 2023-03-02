@@ -1,14 +1,15 @@
 .techstack {
-    background-color: blue;
+    background-color: rgb(40, 40, 132);
     margin: 300px auto;
-    padding: 150px 50px;
+    padding: 70px 5%;
     border: none;
-    width: 80%;
+    width: 60%;
     min-width: 350px;
 }
 
 .techstack__heading {
     padding-bottom: 40px;
+    color: white;
 }
 
 .techstack__heading h1 {
@@ -21,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 60px;
 }
@@ -50,13 +51,14 @@
 
 .active-tab {
     color: orange;
-    text-decoration: 5px underline black;
+    text-decoration: 5px underline orange;
 
 }
 
 .unactive-tab {
     color: white;
     cursor: pointer;
+    padding: 10px;
 }
 
 .unactive-tab:hover {

@@ -9,6 +9,6 @@ export const store = configureStore({
     tabtracker: tabtrackerReducer,
     formtracker: formtrackerReducer,
     mobileswitch: mobileswitchReducer,
-    projectinfo: projectinfoReducer
+    projectinfo: projectinfoReducer,
   }
 });
