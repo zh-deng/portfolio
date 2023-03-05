@@ -3,6 +3,7 @@ import tabtrackerReducer from './tabtrackerSlice';
 import formtrackerReducer from "./formtrackerSlice";
 import mobileswitchReducer from "./mobileswitchSlice";
 import projectinfoReducer from "./projectinfoSlice";
+import darkmodeReducer from "./darkmodeSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     formtracker: formtrackerReducer,
     mobileswitch: mobileswitchReducer,
     projectinfo: projectinfoReducer,
+    darkmode: darkmodeReducer
   }
 });
