@@ -16,6 +16,12 @@
     color: white;
 }
 
+@media screen and (max-width: 1024px) {
+    .projects {
+        max-width: 98%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .projects__heading h1 {
         font-size: 40px;

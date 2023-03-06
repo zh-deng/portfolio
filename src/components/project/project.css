@@ -136,11 +136,15 @@
 
 @media screen and (max-width: 1350px) {
     .project__container__image-container__img-container img:hover {
-        transform: scale(1.5);
+        transform: scale(1.35);
     }
 }
 
 @media screen and (max-width: 1024px) {
+    .project {
+        padding: 10% 0;
+    }
+
     .project__container__image-container__img-container img:hover {
         transform: none;
     }
