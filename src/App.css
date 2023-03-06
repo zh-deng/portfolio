@@ -8,19 +8,19 @@
 
 .App {
     /* ff 3.6+ */
-    background:-moz-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    background: var(--background-ff);
 
     /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    background: var(--background-safari);
 
     /* opera 11.10+ */
-    background:-o-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    background: var(--background-opera);
 
     /* ie 10+ */
-    background:-ms-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    background: var(--background-ie);
 
     /* global 92%+ browsers support */
-    background:radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    background: var(--background-global);
 
     background-attachment: fixed;
 

@@ -3,10 +3,13 @@ import "./darkmodeswitch.css";
 
 
 const Darkmodeswitch = () => {
+    const toggleDarkmode = () => {
+        document.body.classList.toggle("dark-theme");
+    }
     return (
-        <div class ="darkmodeswitch">
+        <div class ="darkmodeswitch" >
             <label>
-                <input type ="checkbox"/>
+                <input type ="checkbox" onClick={toggleDarkmode} />
                 <span class ="darkmodeswitch__slider"></span>
             </label>
         </div>

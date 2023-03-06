@@ -22,7 +22,7 @@ export const projectinfoSlice = createSlice({
                 status: "finished",
                 projectName: "GPT-3",
                 projectDescription: projectDescriptions.gpt3.deutsch,
-                techStack: ["HTML", "CSS", "REACT"],
+                techStack: ["HTML", "CSS", "REACT", "FIGMA"],
                 liveSite: "",
                 gitHub: "https://github.com/zh-deng/GPT-3-Figma"
             },
@@ -32,7 +32,7 @@ export const projectinfoSlice = createSlice({
                 status: "finished",
                 projectName: "SpotifyWEB",
                 projectDescription: projectDescriptions.spotifyweb.deutsch,
-                techStack: ["HTML", "CSS", "REACT"],
+                techStack: ["HTML", "CSS", "REACT", "SPOTIFY-API"],
                 liveSite: "",
                 gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"
             },

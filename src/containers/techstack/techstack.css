@@ -1,5 +1,5 @@
 .techstack {
-    background-color: rgb(40, 40, 132);
+    background-color: var(--background-color-tech);
     margin: 300px auto;
     padding: 70px 5%;
     border: none;

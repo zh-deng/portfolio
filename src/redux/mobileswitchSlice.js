@@ -8,6 +8,7 @@ export const mobileswitchSlice = createSlice({
     reducers: {
         switchScreenversion: (state) => {
             state.mobile = state.mobile === false ? true : false;
+            state.mobile === false ? document.body.style.overflow="auto" : document.body.style.overflow="hidden";
         }
     }
 });

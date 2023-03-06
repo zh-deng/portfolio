@@ -4,7 +4,6 @@ import Darkmodeswitch from "../../components/darkmodeswitch/Darkmodeswitch";
 import lebenslauf from "../../assets/lebenslauf/one.pdf";
 import { useDispatch, useSelector } from "react-redux";
 import { selectMobileswitch, switchScreenversion } from "../../redux/mobileswitchSlice";
-import { switchDarkmode } from "../../redux/darkmodeSlice";
 import { FiMenu } from "react-icons/fi";
 import { ImCross } from "react-icons/im";
 
@@ -22,7 +21,6 @@ const Menu = () => (
 const Navbar = () => {
     const { mobile } = useSelector(selectMobileswitch);
     const dispatch = useDispatch();
-
     return (
         <div className="navbar">
             <div className="navbar__links">
@@ -30,7 +28,7 @@ const Navbar = () => {
                     <a href="#home"><p>Zhihao Deng</p></a>
                 </div>
                 <div className="navbar__links-container">
-                    <div className="navbar__links-container__darkmodeswitch" onClick={() => dispatch(switchDarkmode())}>
+                    <div className="navbar__links-container__darkmodeswitch" >
                         <Darkmodeswitch />
                     </div>
                     <div className={mobile === false ? "navbar__links-container--web" : "navbar__links-container--web invisible"}>

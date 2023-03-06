@@ -1,0 +1,56 @@
+.hero {
+    padding: 200px 15% 0 15%;
+    margin-bottom: 300px;
+
+}
+
+.hero__aboutme {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__aboutme img {
+    width: 400px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.hero__aboutme--text {
+    max-width: 800px;
+    color: var(--font-color);
+}
+
+.hero__aboutme--text h1 {
+    font-size: 50px;
+    padding: 30px 5px;
+
+}
+
+.hero__aboutme--text p {
+    font-size: 24px;
+}
+
+.hero__aboutme--text span {
+    color: var(--font-color-header);
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding: 200px 10% 0 10%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        padding: 200px 5% 0 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__floatbutton{
+        display: none;
+    }
+}

@@ -1,5 +1,31 @@
 :root {
     --font-family: "Helvetiva", sans-serif;
-
     --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --background-ff: -moz-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    --background-safari: -webkit-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    --background-opera: -o-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    --background-ie: -ms-radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    --background-global: radial-gradient(ellipse at 15% 26%, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+    --background-color-navbar: rgb(37, 198, 226);
+    --background-color-tech: rgb(40, 40, 132);
+    --background-color-project: rgb(255, 166, 0);
+    --background-color-footer: rgb(40, 40, 132);
+    --font-color: black;
+    --font-color-project: black;
+    --font-color-header: black;
+}
+
+.dark-theme {
+    --background-ff: #192545;
+    --background-safari: #192545;
+    --background-opera: #192545;
+    --background-ie: #192545;
+    --background-global: #192545;
+    --background-color-navbar: #192545;
+    --background-color-tech: #38446d;
+    --background-color-project: rgb(77, 73, 155);
+    --background-color-footer: #38446d;
+    --font-color: white;
+    --font-color-project: #ccd432;
+    --font-color-header: rgb(149, 138, 138);
 }

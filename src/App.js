@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Header, Lebenslauf, Techstack, Projects, Contactform, Footer} from "./containers";
+import { Navbar, Hero, Lebenslauf, Techstack, Projects, Contactform, Footer} from "./containers";
 import "./App.css";
 
 
@@ -11,7 +11,7 @@ function App() {
           <Navbar />
         </div>
         <div className="app__body">
-          <Header />
+          <Hero />
           <Techstack />
           <Projects />
           <Contactform />

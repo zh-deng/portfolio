@@ -59,21 +59,13 @@
     padding: 5px;
 }
 
-/* .image--active {
-    padding: 5px;
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-} */
-
 .image--active p {
-    color: blue;
+    color: grey;
     transform: scale(1.5);
 }
 
 .project__container__info-container {
-    background-color: rgb(255, 166, 0);
+    background-color: var(--background-color-project);
     margin: 20px auto;
     width: 90%;
     border-radius: 25px;
@@ -98,7 +90,7 @@
 
 .project__container__info-container--info {
     padding: 10px 30px;
-    color: black;
+    color: var(--font-color-project);
 }
 
 .project__container__info-container--info h2 {

@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgb(40, 40, 132);
+    background-color: var(--background-color-footer);
     padding: 20px;
 }
 
@@ -23,4 +23,6 @@
 .footer__copyright p {
     font-size: 24px;
     font-weight: bold;
+    color: white;
+    letter-spacing: 0.05em;
 }
