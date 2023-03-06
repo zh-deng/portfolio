@@ -10,8 +10,14 @@
 }
 
 .footer__contact img {
-    width: 50px;
+    width: 60px;
     margin: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.footer__contact img:hover {
+    background-color: rgba(192, 192, 192, 0.179);
 }
 
 .footer__copyright {
