@@ -14,6 +14,7 @@ const Hero = () => {
                         icon={<BsFillArrowUpCircleFill />}
                         tooltip="Go to top"
                         href="#home"
+                        className="hero__floatbutton--goToTop"
                     />
                     <FloatButton
                         icon={<BsLinkedin />}
@@ -21,6 +22,7 @@ const Hero = () => {
                         href="https://www.linkedin.com/in/zhihao-deng/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="hero__floatbutton--linkedin"
                     />
                     <FloatButton
                         icon={<BsGithub/>}
@@ -28,6 +30,7 @@ const Hero = () => {
                         href="https://github.com/zh-deng"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="hero__floatbutton--github"
                     />
                 </FloatButton.Group>
             </div>
