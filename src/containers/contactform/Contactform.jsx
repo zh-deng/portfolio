@@ -11,7 +11,8 @@ const Contactform = () => {
     return (
         <div className="contact" id="contact">
             <div className="contact__contactform-container">
-                <form name="contact" method="POST" date-netlify="true" onSubmit="submit">
+                <form name="contactform" method="POST" date-netlify="true" onSubmit="submit">
+                    <input type="hidden" name="form-name" value="contactform" />
                     <h2>
                         Kontaktieren Sie mich
                     </h2>
