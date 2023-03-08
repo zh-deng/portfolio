@@ -5,11 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectAlert, switchAlert } from "../../redux/alertbarSlice";
 
 const Contactform = () => {
-    const { firstName, lastName, email, message } = useSelector(selectFormtracker);
+    const { lastName } = useSelector(selectFormtracker);
     const { alert } = useSelector(selectAlert);
     const dispatch = useDispatch();
 
-    const fireAlert = () => {
+    const fireAlert = (event) => {
+        event.target.reset();
+        dispatch(resetForm());
         dispatch(switchAlert());
         setTimeout(() => {
             dispatch(switchAlert())
@@ -24,7 +26,7 @@ const Contactform = () => {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData).toString(),
         })
-          .then(() => {fireAlert()})
+          .then(() => {fireAlert(event)})
           .catch((error) => alert(error));
     };
 
