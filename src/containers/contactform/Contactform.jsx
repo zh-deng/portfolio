@@ -7,11 +7,24 @@ const Contactform = () => {
 
     const { firstName, lastName, email, message } = useSelector(selectFormtracker);
     const dispatch = useDispatch();
-
+    const handleSubmit = (event) => {
+        event.preventDefault();
+      
+        const myForm = event.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+          .then(() => alert("Thank you for your submission"))
+          .catch((error) => alert(error));
+      };
     return (
         <div className="contact" id="contact">
             <div className="contact__contactform-container">
-                <form name="contactform" method="POST">
+                <form name="contactform" method="POST" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contactform" />
                     <h2>
                         Kontaktieren Sie mich

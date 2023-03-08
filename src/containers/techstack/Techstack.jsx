@@ -47,13 +47,18 @@ const Techstack = () => {
                         </div>
                         <div className="techstack__tab-container__section--secondrow logo__spacing">
                             <div>
-                                <img src={nodejs} alt="Node.js" title="Node.js"/>
-                            </div>
-                            <div>
                                 <img src={react} alt="React" title="React"/>
                             </div>
                             <div>
                                 <img src={redux} alt="Redux" title="Redux"/>
+                            </div>
+                            <div>
+                                <img src={typescript} alt="Typescript" title="Typescript"/>
+                            </div>
+                        </div>
+                        <div className="techstack__tab-container__section--thirdrow logo__spacing">
+                            <div>
+                                <img src={sass} alt="Sass" title="Sass"/>
                             </div>
                         </div>
                     </div>
@@ -71,24 +76,13 @@ const Techstack = () => {
                         </div>
                         <div className="techstack__tab-container__section--secondrow logo__spacing">
                             <div>
-                                <img src={typescript} alt="TypeScript" title="TypeScript"/>
+                                <img src={nodejs} alt="Node.js" title="Node.js"/>
                             </div>
-                            <div>
-                                <img src={sass} alt="Sass" title="Sass"/>
-                            </div>
-                            <div>
-                                <img src={bootstrap} alt="Bootstrap" title="Bootstrap"/>
-                            </div>
-                        </div>
-                        <div className="techstack__tab-container__section--thirdrow logo__spacing">
                             <div>
                                 <img src={jest} alt="Jest" title="Jest"/>
                             </div>
                             <div>
-                                <img src={css} alt="css" title="css"/>
-                            </div>
-                            <div>
-                                <img src={css} alt="css" title="css"/>
+                                <img src={bootstrap} alt="Bootstrap" title="Bootstrap"/>
                             </div>
                         </div>
                     </div>
@@ -98,21 +92,10 @@ const Techstack = () => {
                                 <img src={git} alt="Git" title="Git"/>
                             </div>
                             <div>
-                                <img src={docker} alt="Docker" title="Docker"/>
-                            </div>
-                            <div>
-                                <img src={kubernetes} alt="Kubernetes" title="Kubernetes"/>
-                            </div>
-                        </div>
-                        <div className="techstack__tab-container__section--secondrow logo__spacing">
-                            <div>
                                 <img src={restapi} alt="RestAPI" title="RestAPI"/>
                             </div>
                             <div>
                                 <img src={figma} alt="Figma" title="Figma"/>
-                            </div>
-                            <div>
-                                <img src={css} alt="css" title="css"/>
                             </div>
                         </div>
                     </div>
