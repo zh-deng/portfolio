@@ -4,6 +4,7 @@ import formtrackerReducer from "./formtrackerSlice";
 import mobileswitchReducer from "./mobileswitchSlice";
 import projectinfoReducer from "./projectinfoSlice";
 import darkmodeReducer from "./darkmodeSlice";
+import alertbarReducer from './alertbarSlice';
 
 export const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ export const store = configureStore({
     formtracker: formtrackerReducer,
     mobileswitch: mobileswitchReducer,
     projectinfo: projectinfoReducer,
-    darkmode: darkmodeReducer
+    darkmode: darkmodeReducer,
+    alertbar: alertbarReducer
   }
 });

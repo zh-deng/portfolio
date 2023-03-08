@@ -2,25 +2,32 @@ import React from "react";
 import "./contactform.css";
 import { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm, selectFormtracker } from "../../redux/formtrackerSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { selectAlert, switchAlert } from "../../redux/alertbarSlice";
 
 const Contactform = () => {
-
     const { firstName, lastName, email, message } = useSelector(selectFormtracker);
+    const { alert } = useSelector(selectAlert);
     const dispatch = useDispatch();
+
+    const fireAlert = () => {
+        dispatch(switchAlert());
+        setTimeout(() => {
+            dispatch(switchAlert())
+        }, 10000)
+    };
     const handleSubmit = (event) => {
         event.preventDefault();
-      
         const myForm = event.target;
         const formData = new FormData(myForm);
-        
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData).toString(),
         })
-          .then(() => alert("Thank you for your submission"))
+          .then(() => {fireAlert()})
           .catch((error) => alert(error));
-      };
+    };
+
     return (
         <div className="contact" id="contact">
             <div className="contact__contactform-container">
@@ -99,6 +106,18 @@ const Contactform = () => {
                         />
                     </div>
                 </form>
+            </div>
+            <div className={alert === false ? "hide" : "contact__alert"}>
+                <div className="contact__alert__message">
+                    <p>
+                        Danke für ihre Nachricht, Herr {lastName}. <br/> Ich werde mich baldmöglichst bei ihnen melden.
+                    </p>
+                </div>
+                <div className="contact__alert__progressbar">
+                    <div className="contact__alert__progressbar--line-box">
+                        <div className="contact__alert__progressbar--line progressbar--animation"></div>
+                    </div>
+                </div>
             </div>
         </div>
     )

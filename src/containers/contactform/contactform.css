@@ -1,3 +1,7 @@
+.contact {
+    position: relative;
+}
+
 .contact__contactform-container {
     display: flex;
     justify-content: center;
@@ -115,3 +119,67 @@
     background-color: darkblue;
     font-size: 16px;
 }
+
+.contact__alert {
+    position: fixed;
+    right: 1%;
+    bottom: 25%;
+    background-color: rgb(22, 163, 29);
+    color: white;
+    border-top-left-radius: 10px;
+    line-height: 20px;
+}
+
+.contact__alert__message {
+    padding: 10px 20px;
+}
+
+.contact__alert__message p {
+    letter-spacing: 0.03em;
+}
+
+.contact__alert__progressbar {
+    position: relative;
+    width: 100%;
+    height: 0.5em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__alert__progressbar--line-box {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__alert__progressbar--line {
+    height: 70%;
+    background-color: orange;
+}
+
+.progressbar--animation {
+    animation: loading 10s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* .contact__alert__progressbar::before {
+    content: "heyho";
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    background-color: blue;
+} */
