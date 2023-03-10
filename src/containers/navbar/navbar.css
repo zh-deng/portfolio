@@ -150,7 +150,7 @@
 
     .navbar__links-container {
         width: 35%;
-        gap: 10px;
+        gap: 0px;
     }
 
     .navbar__links-hamburgermenu {

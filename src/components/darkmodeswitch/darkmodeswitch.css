@@ -1,6 +1,7 @@
 .darkmodeswitch {
+    display: flex;
     position: relative;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .darkmodeswitch label {
