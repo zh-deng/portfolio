@@ -32,3 +32,17 @@
     color: white;
     letter-spacing: 0.05em;
 }
+
+@media screen and (max-width: 720px) {
+    .footer__contact img {
+        margin: 0 10px 10px 10px;
+    }
+
+    .footer__contact{
+        padding: 0;
+    }
+
+    .footer__copyright p {
+        font-size: 18px;
+    }
+}

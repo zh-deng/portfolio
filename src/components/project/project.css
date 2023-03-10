@@ -100,7 +100,7 @@
 }
 
 .project__container__info-container--info p {
-    text-align: start;
+    text-align: center;
     padding: 25px 0;
     font-size: 20px;
 }
@@ -148,5 +148,29 @@
 
     .project__container__image-container__img-container img:hover {
         transform: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .project__container__info-container--info {
+        padding: 10px 0;
+    }
+
+    .project__container__info-container--info p {
+        text-align: center;
+    }
+
+    .project__container__info-container--tech {
+        gap: 15px;
+    }
+
+    .project__container__info-container--tech {
+        padding: 20px 0;
+    }
+
+    .project__container__info-container--tech h3 {
+        border: 2px solid white;
+        padding: 5px 20px;
+        font-size: 15px;
     }
 }
