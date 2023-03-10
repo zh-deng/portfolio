@@ -38,6 +38,7 @@
     transform: scale(1.75);
     max-width: 100%;
     position: relative;
+    z-index: 10;
 }
 
 .image--off {
