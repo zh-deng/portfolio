@@ -6,11 +6,6 @@
     font-family: var(--font-family);
 }
 
-html, body {
-    height: 100vh;
-    height: 100svh;
-}
-
 .App {
     /* ff 3.6+ */
     background: var(--background-ff);
@@ -31,7 +26,6 @@ html, body {
 
 }
 
-
 a {
     text-decoration: unset;
     color: white;
@@ -46,4 +40,10 @@ a {
 
 .bold {
     font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .App {
+        background-attachment: scroll;
+    }
 }
