@@ -57,7 +57,7 @@
 
 @media screen and (max-width: 720px) {
     .hero {
-        padding: 200px 5% 0 5%;
+        padding: 100px 5% 0 5%;
     }
 
     .hero__floatbutton{
