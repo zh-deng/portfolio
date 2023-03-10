@@ -6,7 +6,7 @@
     font-family: var(--font-family);
 }
 
-html {
+html, body {
     height: 100%;
 }
 
