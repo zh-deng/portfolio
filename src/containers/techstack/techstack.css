@@ -27,9 +27,24 @@
     padding: 60px;
 }
 
+.techstack__tab-container__section h3 {
+    padding-top: 15px;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
 .techstack__tab-container__section img {
     max-width: 100px;
     height: auto;
+}
+
+.techstack__tab-container__section--firstrow div,
+.techstack__tab-container__section--secondrow div,
+.techstack__tab-container__section--thirdrow div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo__spacing {

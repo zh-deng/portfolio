@@ -36,66 +36,82 @@ const Techstack = () => {
                     <div className={tabIndex !== firstTabId && "invisible"}>
                         <div className="techstack__tab-container__section--firstrow logo__spacing">
                             <div>
-                                <img src={html} alt="HTML" title="HTML"/>
+                                <img src={html.logo} alt={html.name} title={html.name}/>
+                                <h3>{html.name}</h3>
                             </div>
                             <div>
-                                <img src={css} alt="CSS" title="CSS"/>
+                                <img src={css.logo} alt={css.name} title={css.name}/>
+                                <h3>{css.name}</h3>
                             </div>
                             <div>
-                                <img src={javascript} alt="JavaScript" title="JavaScript"/>
+                                <img src={javascript.logo} alt={javascript.name} title={javascript.name}/>
+                                <h3>{javascript.name}</h3>
                             </div>
                         </div>
                         <div className="techstack__tab-container__section--secondrow logo__spacing">
                             <div>
-                                <img src={react} alt="React" title="React"/>
+                                <img src={react.logo} alt={react.name} title={react.name}/>
+                                <h3>{react.name}</h3>
                             </div>
                             <div>
-                                <img src={redux} alt="Redux" title="Redux"/>
+                                <img src={redux.logo} alt={redux.name} title={redux.name}/>
+                                <h3>{redux.name}</h3>
                             </div>
                             <div>
-                                <img src={typescript} alt="Typescript" title="Typescript"/>
+                                <img src={typescript.logo} alt={typescript.name} title={typescript.name}/>
+                                <h3>{typescript.name}</h3>
                             </div>
                         </div>
                         <div className="techstack__tab-container__section--thirdrow logo__spacing">
                             <div>
-                                <img src={sass} alt="Sass" title="Sass"/>
+                                <img src={sass.logo} alt={sass.name} title={sass.name}/>
+                                <h3>{sass.name}</h3>
                             </div>
                         </div>
                     </div>
                     <div className={tabIndex !== secondTabId && "invisible"}>
                         <div className="techstack__tab-container__section--firstrow logo__spacing">
                             <div>
-                                <img src={java} alt="Java" title="Java"/>
+                                <img src={java.logo} alt={java.name} title={java.name}/>
+                                <h3>{java.name}</h3>
                             </div>
                             <div>
-                                <img src={python} alt="python" title="python"/>
+                                <img src={python.logo} alt={python.name} title={python.name}/>
+                                <h3>{python.name}</h3>
                             </div>
                             <div>
-                                <img src={mysql} alt="MySQL" title="MySQL"/>
+                                <img src={mysql.logo} alt={mysql.name} title={mysql.name}/>
+                                <h3>{mysql.name}</h3>
                             </div>
                         </div>
                         <div className="techstack__tab-container__section--secondrow logo__spacing">
                             <div>
-                                <img src={nodejs} alt="Node.js" title="Node.js"/>
+                                <img src={nodejs.logo} alt={nodejs.name} title={nodejs.name}/>
+                                <h3>{nodejs.name}</h3>
                             </div>
                             <div>
-                                <img src={jest} alt="Jest" title="Jest"/>
+                                <img src={jest.logo} alt={jest.name} title={jest.name}/>
+                                <h3>{jest.name}</h3>
                             </div>
                             <div>
-                                <img src={bootstrap} alt="Bootstrap" title="Bootstrap"/>
+                                <img src={bootstrap.logo} alt={bootstrap.name} title={bootstrap.name}/>
+                                <h3>{bootstrap.name}</h3>
                             </div>
                         </div>
                     </div>
                     <div className={tabIndex !== thirdTabId && "invisible"}>
                         <div className="techstack__tab-container__section--firstrow logo__spacing">
                             <div>
-                                <img src={git} alt="Git" title="Git"/>
+                                <img src={git.logo} alt={git.name} title={git.name}/>
+                                <h3>{git.name}</h3>
                             </div>
                             <div>
-                                <img src={restapi} alt="RestAPI" title="RestAPI"/>
+                                <img src={restapi.logo} alt={restapi.name} title={restapi.name}/>
+                                <h3>{restapi.name}</h3>
                             </div>
                             <div>
-                                <img src={figma} alt="Figma" title="Figma"/>
+                                <img src={figma.logo} alt={figma.name} title={figma.name}/>
+                                <h3>{figma.name}</h3>
                             </div>
                         </div>
                     </div>
