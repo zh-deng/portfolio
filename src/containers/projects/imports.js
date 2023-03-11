@@ -12,6 +12,10 @@ import gpt3_5 from "../../assets/gpt3/gpt3_5.png";
 import gpt3_6 from "../../assets/gpt3/gpt3_6.png";
 import gpt3_7 from "../../assets/gpt3/gpt3_7.png";
 
+import portfolioWebsite from "../../assets/portfolio/portfolioWebsite.png";
+
+import comingSoon from "../../assets/comingSoon/comingSoon.jpg";
+
 const spotifywebImages = [
     {src: spotifyWEB_1, title: "spotifyWEB_1", alt: "Spotifyweb_Bild1"}, 
     {src: spotifyWEB_2, title: "spotifyWEB_2", alt: "Spotifyweb_Bild2"}, 
@@ -30,7 +34,17 @@ const gpt3Images = [
     {src: gpt3_7, title: "gpt3_7", alt: "gpt3_Bild7"},
 ]
 
+const portfolioImages = [
+    {src: portfolioWebsite, title: "portfolioWebsite", alt: "PortfolioWebsite"}
+];
+
+const comingSoonImages = [
+    {src: comingSoon, title: "comingSoon", alt: "ComingSoon"}
+];
+
 export {
     spotifywebImages,
-    gpt3Images
+    gpt3Images,
+    portfolioImages,
+    comingSoonImages
 }

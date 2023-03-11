@@ -34,35 +34,37 @@ const Contactform = () => {
     return (
         <div className="contact" id="contact">
             <div className="contact__info">
-                <h1>Kontaktdaten</h1>
-                <div className="contact__info--name">
-                    <h2>Name</h2>
-                    <span>
-                        <BsFillPersonFill />
-                        <p>Zhihao Deng</p>
-                    </span>
-                </div>
-                <div className="contact__info--address">
-                    <h2>Adresse</h2>
-                    <span>
-                        <BsHouseFill />
-                            <p>Bussardstraße 32 <br/>
-                            82008 Unterhaching</p>
-                    </span>
-                </div>
-                <div className="contact__info--email">
-                    <h2>Email</h2>
-                    <span>
-                        <MdEmail />
-                        <a href="mailto:zi-hao@web.de"><p>zi-hao@web.de</p></a>
-                    </span>
-                </div>
-                <div className="contact__info--phone">
-                    <h2>Handynummer</h2>
-                    <span>
-                        <BsTelephoneFill />
-                        <p>0174/6088645</p>
-                    </span>
+                <div className="contact__info__card">
+                    <h1>Kontaktdaten</h1>
+                    <div className="contact__info__card--name">
+                        <h2>Name</h2>
+                        <span>
+                            <BsFillPersonFill />
+                            <p>Zhihao Deng</p>
+                        </span>
+                    </div>
+                    <div className="contact__info__card--address">
+                        <h2>Adresse</h2>
+                        <span>
+                            <BsHouseFill />
+                                <p>Bussardstraße 32 <br/>
+                                82008 Unterhaching</p>
+                        </span>
+                    </div>
+                    <div className="contact__info__card--email">
+                        <h2>Email</h2>
+                        <span>
+                            <MdEmail />
+                            <a href="mailto:zi-hao@web.de"><p>zi-hao@web.de</p></a>
+                        </span>
+                    </div>
+                    <div className="contact__info__card--phone">
+                        <h2>Handynummer</h2>
+                        <span>
+                            <BsTelephoneFill />
+                            <p>0174/6088645</p>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div className="contact__contactform-container">

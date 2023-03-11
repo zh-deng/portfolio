@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { spotifywebImages, gpt3Images } from "../containers/projects/imports";
+import { spotifywebImages, gpt3Images, portfolioImages, comingSoonImages } from "../containers/projects/imports";
 import { projectDescriptions } from "../containers/projects/projectDescriptions";
 
 export const projectinfoSlice = createSlice({
@@ -7,14 +7,24 @@ export const projectinfoSlice = createSlice({
     initialState: {
         projectArray: [
             {
-                imgArray: gpt3Images,
+                imgArray: comingSoonImages,
                 currentImage: 0,
                 status: "ongoing",
-                projectName: "E-Commerce",
-                projectDescription: projectDescriptions.ecommerce.deutsch,
+                projectName: "DummyWebsite",
+                projectDescription: projectDescriptions.comingSoon.deutsch,
                 techStack: ["HTML", "CSS", "SCSS", "REACT", "REDUX", "TYPESCRIPT"],
-                liveSite: "",
+                liveDemo: "",
                 gitHub: "https://github.com/zh-deng/GPT-3-Figma"
+            },
+            {
+                imgArray: portfolioImages,
+                currentImage: 0,
+                status: "ongoing",
+                projectName: "Portfolio Website",
+                projectDescription: projectDescriptions.portfolio.deutsch,
+                techStack: ["HTML", "CSS", "REACT", "REDUX"],
+                liveDemo: "https://dengdev.netlify.app/",
+                gitHub: "https://github.com/zh-deng/portfolio"
             },
             {
                 imgArray: gpt3Images,
@@ -23,7 +33,7 @@ export const projectinfoSlice = createSlice({
                 projectName: "GPT-3",
                 projectDescription: projectDescriptions.gpt3.deutsch,
                 techStack: ["HTML", "CSS", "REACT", "FIGMA"],
-                liveSite: "",
+                liveDemo: "https://gpt3-dengdev.netlify.app/",
                 gitHub: "https://github.com/zh-deng/GPT-3-Figma"
             },
             {
@@ -33,7 +43,7 @@ export const projectinfoSlice = createSlice({
                 projectName: "SpotifyWEB",
                 projectDescription: projectDescriptions.spotifyweb.deutsch,
                 techStack: ["HTML", "CSS", "REACT", "SPOTIFY-API"],
-                liveSite: "",
+                liveDemo: "",
                 gitHub: "https://github.com/zh-deng/SpotifyWEB/tree/master"
             },
         ]

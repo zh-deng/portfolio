@@ -9,9 +9,14 @@ const projectDescriptions = {
             deutsch: "Das Project GPT-3 wurde erstellt um gelernte Designkonzepte und vor allem Responsive Design bei der Erstellung einer Website anzuwenden. Hierfür wurde ein Figma-Template ausgesucht und versucht 1:1 nachzubauen.",
             englisch: ""
         },
-    ecommerce: 
+    portfolio:
         {
-            deutsch: "hihoecommerce",
+            deutsch: "Diese Portfolio Website",
+            englisch: ""
+        },
+    comingSoon: 
+        {
+            deutsch: "Gerade noch in Produktion",
             englisch: ""
         }
 }

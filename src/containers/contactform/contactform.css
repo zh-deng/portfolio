@@ -4,11 +4,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
 }
 
 .contact__info {
-    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info__card {
+    width: 95%;
     background-color: rgb(229, 230, 229);
     text-align: center;
     padding: 30px 50px;
@@ -17,35 +23,35 @@
     letter-spacing: 0.03em;
 }
 
-.contact__info div {
+.contact__info__card div {
     background-color: rgba(255, 0, 0, 0.672);
     margin: 10px;
     padding: 5px 25px;
     border-radius: 10px;
 }
 
-.contact__info h1 {
+.contact__info__card h1 {
     padding: 10px 10px 20px 10px;
 }
 
-.contact__info h2 {
+.contact__info__card h2 {
     padding: 5px;
 }
 
-.contact__info p {
+.contact__info__card p {
     padding: 5px;
 }
 
-.contact__info a {
+.contact__info__card a {
     color: black;
     text-decoration: underline;
 }
 
-.contact__info a:hover {
+.contact__info__card a:hover {
     color: white;
 }
 
-.contact__info span {
+.contact__info__card span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
 
 .contact__contactform-container form {
     background-color: #E4E7ED;
-    width: 90%;
     min-width: 350px;
+    width: 95%;
     max-width: 500px;
     margin: 0 auto 150px auto;
     padding: 40px 30px;
@@ -226,7 +233,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .contact__info {
+    .contact__info__card {
         padding: 30px 20px;
     }
 

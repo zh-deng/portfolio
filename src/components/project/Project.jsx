@@ -91,7 +91,7 @@ const Project = (props) => {
                     </div>
                     <div className="project__container__info-container--links">
                         {
-                            currentProject.liveSite !== "" && <a href={currentProject.liveSite} target="_blank"><button>Live Site</button></a>
+                            currentProject.liveDemo !== "" && <a href={currentProject.liveDemo} target="_blank"><button>Live Demo</button></a>
                         }
                         {
                             currentProject.gitHub !== "" && <a href={currentProject.gitHub} target="_blank"><button>GitHub</button></a>
