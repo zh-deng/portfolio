@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Hero, Lebenslauf, Techstack, Projects, Contactform, Footer} from "./containers";
+import { Navbar, Hero, Techstack, Projects, Contactform, Footer} from "./containers";
 import "./App.css";
 
 

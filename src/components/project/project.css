@@ -32,13 +32,13 @@
     width: 98%;
     height: auto;
     transition: transform 0.7s;
+    z-index: 10;
 }
 
 .project__container__image-container__img-container img:hover {
     transform: scale(1.75);
     max-width: 100%;
     position: relative;
-    z-index: 10;
 }
 
 .image--off {
@@ -52,6 +52,7 @@
     align-content: center;
     gap: 10px;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 .project__container__image-counter p {

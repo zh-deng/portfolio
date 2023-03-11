@@ -11,7 +11,7 @@ const Footer = () => {
                 <a href="https://github.com/zh-deng" target="_blank" rel="noopener noreferrer" ><img src={github} /></a>
             </div>
             <div className="footer__copyright">
-                <p>Copyright by Zhihao Deng</p>
+                <p>Design by Zhihao Deng</p>
             </div>
         </div>
     )

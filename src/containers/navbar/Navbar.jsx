@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import Darkmodeswitch from "../../components/darkmodeswitch/Darkmodeswitch";
-import lebenslauf from "../../assets/lebenslauf/one.pdf";
+import lebenslauf from "../../assets/lebenslauf/Lebenslauf.pdf";
 import { useDispatch, useSelector } from "react-redux";
 import { selectMobileswitch, switchScreenversion } from "../../redux/mobileswitchSlice";
 import { FiMenu } from "react-icons/fi";

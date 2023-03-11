@@ -3,6 +3,8 @@ import "./contactform.css";
 import { updateFirstName, updateLastName, updateEmail, updateMessage, resetForm, selectFormtracker } from "../../redux/formtrackerSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { selectAlert, switchAlert } from "../../redux/alertbarSlice";
+import { BsTelephoneFill, BsHouseFill, BsFillPersonFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const Contactform = () => {
     const { lastName } = useSelector(selectFormtracker);
@@ -10,9 +12,8 @@ const Contactform = () => {
     const dispatch = useDispatch();
 
     const fireAlert = (event) => {
-        event.target.reset();
-        dispatch(resetForm());
         dispatch(switchAlert());
+        event.target.reset();
         setTimeout(() => {
             dispatch(switchAlert())
         }, 10000)
@@ -32,6 +33,38 @@ const Contactform = () => {
 
     return (
         <div className="contact" id="contact">
+            <div className="contact__info">
+                <h1>Kontaktdaten</h1>
+                <div className="contact__info--name">
+                    <h2>Name</h2>
+                    <span>
+                        <BsFillPersonFill />
+                        <p>Zhihao Deng</p>
+                    </span>
+                </div>
+                <div className="contact__info--address">
+                    <h2>Adresse</h2>
+                    <span>
+                        <BsHouseFill />
+                            <p>Bussardstraße 32 <br/>
+                            82008 Unterhaching</p>
+                    </span>
+                </div>
+                <div className="contact__info--email">
+                    <h2>Email</h2>
+                    <span>
+                        <MdEmail />
+                        <p>zi-hao@web.de</p>
+                    </span>
+                </div>
+                <div className="contact__info--phone">
+                    <h2>Handynummer</h2>
+                    <span>
+                        <BsTelephoneFill />
+                        <p>0174/6088645</p>
+                    </span>
+                </div>
+            </div>
             <div className="contact__contactform-container">
                 <form name="contactform" method="POST" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contactform" />

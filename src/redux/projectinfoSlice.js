@@ -48,12 +48,15 @@ export const projectinfoSlice = createSlice({
             if(state.projectArray[action.payload].currentImage < state.projectArray[action.payload].imgArray.length-1) {
                 state.projectArray[action.payload].currentImage++;
            }
+        },
+        jumpToImage: (state, action) => {
+            state.projectArray[action.payload[0]].currentImage = action.payload[1];
         }
     }
 });
 
 export const selectProjectinfo = state => state.projectinfo;
 
-export const {previousImage, nextImage} = projectinfoSlice.actions;
+export const {previousImage, nextImage, jumpToImage} = projectinfoSlice.actions;
 
 export default projectinfoSlice.reducer;
