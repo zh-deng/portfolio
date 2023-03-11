@@ -14,6 +14,7 @@
     padding: 30px 50px;
     margin-bottom: 130px;
     box-shadow: 15px 10px 5px rgba(255, 0, 0, 0.694);
+    letter-spacing: 0.03em;
 }
 
 .contact__info div {
@@ -33,6 +34,15 @@
 
 .contact__info p {
     padding: 5px;
+}
+
+.contact__info a {
+    color: black;
+    text-decoration: underline;
+}
+
+.contact__info a:hover {
+    color: white;
 }
 
 .contact__info span {

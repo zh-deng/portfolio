@@ -54,7 +54,7 @@ const Contactform = () => {
                     <h2>Email</h2>
                     <span>
                         <MdEmail />
-                        <p>zi-hao@web.de</p>
+                        <a href="mailto:zi-hao@web.de"><p>zi-hao@web.de</p></a>
                     </span>
                 </div>
                 <div className="contact__info--phone">
