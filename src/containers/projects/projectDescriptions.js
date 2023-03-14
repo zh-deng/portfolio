@@ -11,12 +11,12 @@ const projectDescriptions = {
         },
     portfolio:
         {
-            deutsch: "Diese Portfolio Website",
+            deutsch: "Das ist die aktuelle Portfolio Website.",
             englisch: ""
         },
     comingSoon: 
         {
-            deutsch: "Gerade noch in Produktion",
+            deutsch: "ChatWithGPT ist das aktuellste Projekt. Hierbei wurde zum einen die Wikipedia API, welche Artikel auf Anfrage von Titeln zurücksendet, als auch die neue GPT-3.5 API von OpenAI, welches ein Chatsystem mit künstlicher Intelligenz darstellt, eingebaut. In diesem Projekt wurde zusätzlich das Konzept 'Mobile first' angewendet.",
             englisch: ""
         }
 }
