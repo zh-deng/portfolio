@@ -36,7 +36,7 @@
 }
 
 .project__container__image-container__img-container img:hover {
-    transform: scale(1.75);
+    transform: scale(1.5);
     max-width: 100%;
     position: relative;
 }
