@@ -93,10 +93,6 @@ const Techstack = () => {
                                 <img src={jest.logo} alt={jest.name} title={jest.name}/>
                                 <h3>{jest.name}</h3>
                             </div>
-                            <div>
-                                <img src={bootstrap.logo} alt={bootstrap.name} title={bootstrap.name}/>
-                                <h3>{bootstrap.name}</h3>
-                            </div>
                         </div>
                     </div>
                     <div className={tabIndex !== thirdTabId && "invisible"}>

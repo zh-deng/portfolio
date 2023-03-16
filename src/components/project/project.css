@@ -63,7 +63,6 @@
 
 .image--active p {
     color: grey;
-    transform: scale(1.5);
 }
 
 .project__container__info-container {
