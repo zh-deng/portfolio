@@ -9,7 +9,7 @@ export const projectinfoSlice = createSlice({
             {
                 imgArray: chatgptImages,
                 currentImage: 0,
-                status: "ongoing",
+                status: "finished",
                 projectName: "ChatWithAI",
                 projectDescription: projectDescriptions.comingSoon.deutsch,
                 techStack: ["HTML", "CSS", "JavaScript", "REACT", "REDUX", "WIKIPEDIA API", "GPT-3.5 API"],
@@ -19,7 +19,7 @@ export const projectinfoSlice = createSlice({
             {
                 imgArray: portfolioImages,
                 currentImage: 0,
-                status: "ongoing",
+                status: "finished",
                 projectName: "Portfolio Website",
                 projectDescription: projectDescriptions.portfolio.deutsch,
                 techStack: ["HTML", "CSS", "JavaScript", "REACT", "REDUX"],
