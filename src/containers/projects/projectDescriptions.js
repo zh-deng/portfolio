@@ -1,4 +1,9 @@
 const projectDescriptions = {
+    mywebsite:
+        {
+            deutsch: "MyWebsite ist derzeit das aktuellste Projekt, weshalb derzeit noch nicht alle Features fertiggestellt sind. Das Projekt ist eine Multi-Page Website, welche viele verschiedene Features implementiert. Einige fertige Features sind z.B. der Light/Dark-Mode und die Filterfunktion von Jobs im Bereich Karriere. Zusätzlich wurde auf ein 'Responsive Design' der Website geachtet.",
+            englisch: ""
+        },
     spotifyweb: 
         {
             deutsch: "Die Website SpotifyWeb wurde entwickelt um das Integrieren von APIs zu üben. Hierbei wurde die API von Spotify verwendet. Nutzer können ihre privaten Spotify-Accounts mit der Webapplikation verknüpfen und nach Liedern anhand von Songnamen, Alben oder Interpreten suchen. Nach der Erstellung der temporären Playlist, wird durch das Speichern die Playlist automatisch auf Spotify übernommen.",
@@ -14,9 +19,9 @@ const projectDescriptions = {
             deutsch: "Das ist die aktuelle Portfolio Website.",
             englisch: ""
         },
-    comingSoon: 
+    chatgpt: 
         {
-            deutsch: "ChatWithGPT ist das aktuellste Projekt. Hierbei wurde zum einen die Wikipedia API, welche Artikel auf Anfrage von Titeln zurücksendet, als auch die neue GPT-3.5 API von OpenAI, welches ein Chatsystem mit künstlicher Intelligenz darstellt, eingebaut. In diesem Projekt wurde zusätzlich das Konzept 'Mobile first' angewendet.",
+            deutsch: "ChatWithAI ist ein persönliches Projekt, welches verwendet wurde um die neue KI von OpenAI zu testen. Hierbei wurde zum einen die Wikipedia API, welche Artikel auf Anfrage von Titeln zurücksendet, als auch die neue GPT-3.5 API von OpenAI, welches ein Chatsystem mit künstlicher Intelligenz darstellt, eingebaut. In diesem Projekt wurde zusätzlich das Konzept 'Mobile first' angewendet.",
             englisch: ""
         }
 }

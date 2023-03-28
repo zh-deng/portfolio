@@ -7,6 +7,7 @@
 
 .projects__heading {
     padding: 50px;
+    border-bottom: 3px solid white;
 }
 
 .projects__heading h1 {
